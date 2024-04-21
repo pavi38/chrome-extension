@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Chrome Extension</title>
+  <script  type="module" src="popup.js" defer></script>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body style="padding:0px 10px;text-align:center;width:350px;">
+  <!--
+  <h1>Simple Chrome Extension</h1>
+  <p>An example of the simplest possible Chrome extension, using just the <b>activeTab</b> permission.</p>
+  <p>Your active tab's title is:</p>
+  <blockquote id="activeTabTitle" style="background:#eaf5ff;padding:5px;"></blockquote>
+    -->
+  <div class="tabmenu">
+    <button id="LinksButton" class="tablinks" >Links</button>
+    <button id ="PathOfTravelButton" class="tablinks">Path of Travel</button>
+    <button id ="TextBreakDownButton" class="tablinks">Text Break Down</button>
+
+  </div>
+
+
+  <div id="ListOfLinks" class="tabcontent">
+    <h2>Links for this website:</h2>
+    <ul id="links"></ul>
+  </div>
+
+  <div id="PathOfTravel" class="tabcontent">
+    <button id="Clear">Clear Path</button>
+    <div id="path"></div>
+
+  </div>
+
+  <div id="TextBreakDown" class="tabcontent">
+    <h3>Summarize Text into a list of bullet points</h3>
+    <textarea id="TextInput" rows="7" cols="45"></textarea>
+    <button id="Convert">Summarize into Bullet Points</button>
+    
+    <ul id="response"></ul>
+
+
+
+  </div>
+
+  
+</body>
+</html>
