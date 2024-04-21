@@ -16,9 +16,11 @@
     border: none;
     outline: none;
     cursor: pointer;
+    /* padding: 14px 16px; */
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 17px;
+    /* font-size: 17px; */
+    font-size: 14px;
   }
   
   /* Change background color of buttons on hover */
@@ -29,4 +31,12 @@
   /* Create an active/current tablink class */
   .tabmenu button.active {
     background-color: #ccc;
+  }
+
+  .top-row {
+    display: flex;
+  }
+
+  .bottom-row {
+    display: flex;
   }

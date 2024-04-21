@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Simple Chrome Extension</title>
-  <script  type="module" src="popup.js" defer></script>
+  <script type="module" src="popup.js" defer></script>
   <link rel="stylesheet" href="popup.css">
 </head>
+
 <body style="padding:0px 10px;text-align:center;width:350px;">
   <!--
   <h1>Simple Chrome Extension</h1>
@@ -13,11 +15,17 @@
   <blockquote id="activeTabTitle" style="background:#eaf5ff;padding:5px;"></blockquote>
     -->
   <div class="tabmenu">
-    <button id="LinksButton" class="tablinks" >Links</button>
-    <button id ="PathOfTravelButton" class="tablinks">Path of Travel</button>
-    <button id ="TextBreakDownButton" class="tablinks">Text Break Down</button>
-
+    <div class="top-row">
+      <button id="LinksButton" class="tablinks">Links</button>
+      <button id="PathOfTravelButton" class="tablinks">Path of Travel</button>
+      <button id="TextBreakDownButton" class="tablinks">Text Break Down</button>
+    </div>
+    <div class="bottom-row">
+      <input type="checkbox" id="ArrowLinePathButton" class="tablinks">Show Arrow Path</input>
+    </div>
   </div>
+
+
 
 
   <div id="ListOfLinks" class="tabcontent">
@@ -28,20 +36,16 @@
   <div id="PathOfTravel" class="tabcontent">
     <button id="Clear">Clear Path</button>
     <div id="path"></div>
-
   </div>
 
   <div id="TextBreakDown" class="tabcontent">
     <h3>Summarize Text into a list of bullet points</h3>
     <textarea id="TextInput" rows="7" cols="45"></textarea>
     <button id="Convert">Summarize into Bullet Points</button>
-    
     <ul id="response"></ul>
-
-
-
   </div>
 
-  
+
 </body>
+
 </html>
